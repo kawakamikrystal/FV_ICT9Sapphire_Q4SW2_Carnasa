@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+ * {
+	text-align: center;
+}
+
+</style>	
+</head>
+<body>
+<h1>Time Converter</h1>
+<h2>ang hirap magconvert sir pls help</h2>
+<table class="center">
+<th>Seconds
+			<p><input type="text" id="seconds"></p>
+			<input type="button" onclick="SecMin()" value="To Minutes">
+			<input type="button" onclick="SecHr()" value="To Hours">
+			<input type="button" onclick="SecDt()" value="To Days">
+		</th>
+<th>Minutes
+			<p><input type="text" id="minutes"></p>
+			<input type="button" onclick="MinSec()" value="To Seconds">
+			<input type="button" onclick="MinHr()" value="To Hours">
+			<input type="button" onclick="MinDt()" value="To Days">
+		</th>
+	</tr>
+</tbody></table>
+<table class="center">
+	<tbody><tr>
+<th>Hours
+			<p><input type="text" id="hours"></p>
+			<input type="button" onclick="HrSec()" value="To Seconds">
+			<input type="button" onclick="HrMin()" value="To Minutes">
+			<input type="button" onclick="HrDt()" value="To Days">
+		</th>
+<th>Days
+			<p><input type="text" id="days"></p>
+			<input type="button" onclick="DtSec()" value="To Seconds">
+			<input type="button" onclick="DtMin()" value="To Minutes">
+			<input type="button" onclick="DtHr()" value="To Hours">
+		</th>
+	</tr>
+	</table>
+<script>
+	function SecMin(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function SecHr(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600;		
+		alert(x / y);
+	}
+
+	function SecDt(){
+		var x, y 
+		x = (document.getElementById('seconds').value);
+		y = 86400;		
+		alert(x / y);
+	}
+	function MinSec(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function MinHr(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function MinDt(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 1440;		
+		alert(x / y);
+	}
+function HrSec(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 3600;		
+		alert(x * y);
+	}
+	function HrMin(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function HrDt(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 24;		
+		alert(x / y);
+	}
+function DtSec(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function DtMin(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function DtHr(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</body>
+</html>
